@@ -28,3 +28,4 @@ A template repository for my typical C projects.
 | man                  | Manpages directory           |
 
 
+## Notes: don't forget to symlink libraries into include, as presented.

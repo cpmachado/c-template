@@ -7,6 +7,7 @@
 VERSION = 1.0
 LIBSAMPLE_DIR = ./libsample
 LIBSAMPLE = ${LIBSAMPLE_DIR}/libsample.a
+INC = -I${LIBSAMPLE_DIR}/include
 
 include config.mk
 
