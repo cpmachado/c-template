@@ -13,6 +13,7 @@ int main(int argc, char **argv) {
 	parseFlags(argc, argv);
 
 	printf("%s is running\n", *argv);
+
 	sample_function();
 
 	return 0;

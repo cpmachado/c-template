@@ -6,9 +6,10 @@
 *.o
 *.a
 *.d
-./sample
+sample
 
 # exception, directory of lib with same name, quite common in my projects
+!sample/
 
 
 # user config.h

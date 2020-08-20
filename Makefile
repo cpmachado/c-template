@@ -75,10 +75,11 @@ config.h: config.def.h
 	cp config.def.h config.h
 
 
-${LIBSAMPLE}: ${LIBSAMPLE_DIR}/*.c
+${LIBSAMPLE}:
 	make -C ${LIBSAMPLE_DIR}
 
 
-sample: config.h ${OBJ} ${LIBSAMPLE}
+sample: ${OBJ} ${LIBSAMPLE} | config.h
+	${CC} $^ -o $@ ${LDFLAGS}
 
 -include ${DEP}
