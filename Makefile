@@ -33,7 +33,7 @@ DEP = ${SRC:.c=.d}
 BIN = sample
 
 
-all: ${BIN}
+all: config.h ${BIN}
 	@echo "sample built"
 
 
@@ -79,7 +79,7 @@ ${LIBSAMPLE}:
 	make -C ${LIBSAMPLE_DIR}
 
 
-sample: ${OBJ} ${LIBSAMPLE} | config.h
+sample: config.h ${OBJ} ${LIBSAMPLE}
 	${CC} $^ -o $@ ${LDFLAGS}
 
 -include ${DEP}
