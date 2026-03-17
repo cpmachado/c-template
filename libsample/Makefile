@@ -3,6 +3,8 @@
 .PHONY: all clean
 .DEFAULT: all
 
+VERSION=1.0.0
+
 include config.mk
 
 SRC = ${wildcard *.c}
