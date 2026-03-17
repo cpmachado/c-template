@@ -24,7 +24,7 @@ PKGFILES = \
 	include\
 	libsample\
 	man\
-	sample.c\
+	main.c\
 	util.c
 
 SRC = ${wildcard *.c}
