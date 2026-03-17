@@ -4,7 +4,7 @@
 .PHONY: all clean dist install uninstall
 .DEFAULT: all
 
-VERSION = 1.0
+VERSION = 1.0.0
 LIBSAMPLE_DIR = ./libsample
 LIBSAMPLE = ${LIBSAMPLE_DIR}/libsample.a
 INC = -I${LIBSAMPLE_DIR}/include
