@@ -5,6 +5,10 @@
 
 #include "config.h"
 
+#ifndef VERSION
+#define VERSION "unknown"
+#endif
+
 
 /* FUNCTION DEFINITIONS */
 void usage(void) {
